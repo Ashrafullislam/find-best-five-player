@@ -49,12 +49,14 @@
    </header>
 
     <!-- header section end here  -->
+
+
    <!-- main section start from here  -->
    <main id="main">
     <section class="player-container d-flex flex-row flex-wrap ">
-        <!-- player card col -->
+    <!-- player card col -->
      
-   <div class="col-lg-9">
+     <div class="col-lg-9 col-12">
 
       <div class="players-card d-flex flex-row  flex-wrap">
          
@@ -102,12 +104,153 @@
             </div>
         </div>
         <!-- card -3 end  -->
+        
+            <!-- card -4 start   -->
+            <div class="col-lg-4 col-12">
+              <div class="card-player m-3">
+                <div class="card ">
+                  <img class="card-img-top" src="/images/dimaria.jpg" alt=" Messi img">
+                   <div class="card-footer bg-dark d-flex flex-column px-5 pb-4">
+                     <p class="text-center text-white " id="dimaria" >Dimaria Football </p>
+                     <p class="card-text text-white text-center"> 46 Goal . 120 Assist </p>
+                    <button class="btn btn-primary" id="btn-dimaria"> Select Dimaria </button>
+                  </div>
+                </div>
+              </div>
+           </div>
+          <!-- card -4 end  -->
 
+           <!-- card -5 start   -->
+           <div class="col-lg-4 col-12">
+            <div class="card-player m-3">
+              <div class="card ">
+                <img class="card-img-top" src="/images/javir jental argentina.jpg" alt=" Messi img">
+                 <div class="card-footer bg-dark d-flex flex-column px-5 pb-4">
+                   <p class="text-center text-white  " id="javir-jental">Javir Jental   </p>
+                   <p class="card-text text-white text-center"> 46 Goal . 120 Assist </p>
+                  <button class="btn btn-primary" id="btn-javir-jental"> Select Javir Jental  </button>
+                </div>
+              </div>
+            </div>
+         </div>
+        <!-- card -5 end  -->
 
+         <!-- card -6 start   -->
+         <div class="col-lg-4 col-12">
+          <div class="card-player m-3">
+            <div class="card ">
+              <img class="card-img-top" src="/images/juaquin Correa.jpg" alt=" juaquin Correa.jpg">
+               <div class="card-footer bg-dark d-flex flex-column px-5 pb-4">
+                 <p class="text-center text-white " id="juaquin-correa">Juaquin Correa   </p>
+                 <p class="card-text text-white text-center"> 30 Goal . 112 Assist </p>
+                <button class="btn btn-primary" id="btn-juaquin " > Select Juaquin  </button>
+              </div>
+            </div>
+          </div>
+       </div>
+      <!-- card -6 end  -->
 
+       <!-- card -7 start   -->
+       <div class="col-lg-4 col-12">
+        <div class="card-player m-3">
+          <div class="card ">
+            <img class="card-img-top" src="/images/Parades,Leandro stats.jpg" alt=" Parades,Leandro stats.jpg">
+             <div class="card-footer bg-dark d-flex flex-column px-5 pb-4">
+               <p class="text-center text-white  bold" id="parades">Parades Argentina </p>
+               <p class="card-text text-white text-center"> 28 Goal . 80 Assist </p>
+              <button class="btn btn-primary" id="btn-parades"> Select Parades </button>
+            </div>
+          </div>
+        </div>
+     </div>
+    <!-- card -7 end  -->
+
+     <!-- card -8 start   -->
+     <div class="col-lg-4 col-12">
+      <div class="card-player m-3">
+        <div class="card ">
+          <img class="card-img-top" src="/images/neimar.jpg" alt=" Neimar img">
+           <div class="card-footer bg-dark d-flex flex-column px-5 pb-4">
+             <p class="text-center text-white  bold" id="neimar"> Neimar  </p>
+             <p class="card-text text-white text-center"> 34 Goal . 110 Assist </p>
+            <button class="btn btn-primary" id="btn-neimar"> Select Neimar </button>
+          </div>
+        </div>
       </div>
-    </section>
-  </main>
+   </div>
+  <!-- card -8 end  -->
+
+   <!-- card -9 start   -->
+   <div class="col-lg-4 col-12">
+    <div class="card-player m-3">
+      <div class="card ">
+        <img class="card-img-top" src="/images/Robert Lewandowski.jpg" alt=" Robert Lewandowski.jpg">
+         <div class="card-footer bg-dark d-flex flex-column px-5 pb-4">
+           <p class="text-center text-white " id="robert"> Robert Lewandowski  </p>
+           <p class="card-text text-white text-center"> 26 Goal . 70 Assist </p>
+          <button class="btn btn-primary" id="btn-robert"> Select Robert  </button>
+        </div>
+       </div>
+      </div>
+    </div>
+   <!-- card -9 end  -->
+
+  </div>
+ </div>   
+
+       
+
+    <!-- selected player show section  -->
+  <div class="col-lg-3 col-12 ">
+    <div class="card  bg-dark m-3">
+     <h2 class="text-white text-center mt-5 mb-3">Selected-V</h2>
+       <ul id="player-list-ul">
+       
+        </ul>
+    </div>
+ 
+   <!-- budget calculation section   -->
+  <div id="budget-card" class="card mx-3 mt-4  ">
+   <div class="budget-card px-3 bg-dark rounded-2 ">
+      <h3 class="text-white text-center my-4">Budget</h3>
+       <div class="d-flex justify-content-between">
+         <!-- per player amount  -->
+
+         <span class="font-gray"> Per Player </span> 
+         <input id="per-player-amount" class="bg-dark border py-2 text-center text-light input-size      ms-4" type="number" value="1000">
+        </div>
+         <!-- selected list player  calculate button  -->
+       <button class=" mt-3 btn-size " id="calclulate"> Calculate </button> <br> <br>
+     <p class="font-gray"> Player Expenses   <span class="text-light ms-3">$</span> 
+   <span  class="text-white" id="player-expenses">00 </span>  </p>
+
+    <!-- manager input amount  -->
+       <div class="my-2 d-flex justify-content-between">
+            <span class="font-gray"> Manager </span> 
+              <input id="manager-amount" class="bg-dark border py-2 text-center text-light input-size " type="number" value="2000">
+                </div>
+
+              <!-- coach amount input field  -->
+             <div class="mt-2 d-flex justify-content-between">
+           <span class="font-gray me-3"> Coach </span> 
+         <input id="coach-amount" class="bg-dark border py-2 text-center text-light input-size ms-5" type="number" value="4000">
+     </div>
+
+        <!-- total amount calculate button and get result  -->
+        <button class=" mt-3 btn-size " id="calclulate-total"> Calculate Total </button> <br> <br>
+           <div class="d-flex justify-content-between flex-row mb-3">
+            <h4 class="font-color-light"> Total  </h4>
+            <h4 class="text-danger"> $<span class="text-danger" id="total-amount">00</span></h4>
+           </div>
+
+         </div>
+        </div>
+      
+       </div>
+      </section>
+     </main>
+
+
   <!-- main section end here  -->
 
     
