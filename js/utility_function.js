@@ -89,5 +89,4 @@ function calclulateTotalBudget(totalPlayerAmount){
     previousTotalField.innerText = totalCalculateBudget  
   }
  
-
 }

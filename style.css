@@ -158,6 +158,7 @@ body{
 
  /* main section end  here  */
 
+ /* media query section device screen 992px  */
 @media (max-width:992px){
    .logo{
       font-size: 2rem;
