@@ -18,4 +18,15 @@
       }
    }
    
+//    disable button onclick 
+function buttonDisabledById(btnId,selectPlayer,elementName){
+  if(selectPlayer === elementName ){
+      document.getElementById(btnId).disabled = true;
+      return true;
+     }
+     else{
+      document.getElementById(btnId).disabled = false;
+      return false;
+     }       
+}
 
