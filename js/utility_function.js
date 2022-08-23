@@ -30,3 +30,30 @@ function buttonDisabledById(btnId,selectPlayer,elementName){
      }       
 }
 
+ //  calculata The total player budget and update the player Expenses 
+ function calculatePlayerBudget(){
+  // get the totalChildElement number by parernt Id
+  let totalChildElement = document.getElementById('player-list-ul').childElementCount;
+
+  // get the inputValue of perPlayerAmount 
+  let  perPlayerAmount = document.getElementById('per-player-amount');
+  let  perPlayerAmountString = perPlayerAmount.value ;
+  let  perPlayerNewAmountNumber =  parseInt(perPlayerAmountString);
+   if( perPlayerAmountString === ''){
+    alert('Please enter per player amount in numbers');
+   }
+   else{
+    
+      // calculate the total player amouont 
+  let totalPlayerAmount = totalChildElement * perPlayerNewAmountNumber;
+      
+  // find the playerExpenses and update the amount 
+  const playerExpensesField = document.getElementById('player-expenses');
+  const playerExpensesString = playerExpensesField.innerText;
+   
+  // update the expenses amount  
+  playerExpensesField.innerText = totalPlayerAmount;
+  return totalPlayerAmount;
+   }
+
+}
