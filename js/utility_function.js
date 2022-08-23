@@ -57,3 +57,37 @@ function buttonDisabledById(btnId,selectPlayer,elementName){
    }
 
 }
+
+//  Calculate Total budget  
+function calclulateTotalBudget(totalPlayerAmount){
+  // get the manager inputField 
+   
+
+  const  managerInputValue = document.getElementById('manager-amount');
+  const managerInputValueString = managerInputValue.value;
+  const managerNewAmount = parseInt(managerInputValueString);  
+  // get the coach inputFeild value 
+  const coachInputValue = document.getElementById('coach-amount');
+  const coachInputValueString = coachInputValue.value;
+  const coachNewAmount = parseInt(coachInputValueString);  
+
+  if( managerInputValueString === ''){
+    alert('Please enter amount numbers of manager box ');
+  }
+  else if  (coachInputValueString === ''){
+    alert( 'Please enter amount numbers of coach box ');
+  }
+  else{
+ 
+    // get the tolat field and update total amount  
+    let previousTotalField = document.getElementById('total-amount');
+    let previousTotalFieldValue = previousTotalField.innerText; 
+
+    // playerAmount , managerNewAmount , coachNewAmount sum and update total 
+    let totalCalculateBudget = totalPlayerAmount + managerNewAmount + coachNewAmount 
+    // set the total value 
+    previousTotalField.innerText = totalCalculateBudget  
+  }
+ 
+
+}
