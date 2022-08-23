@@ -28,7 +28,7 @@ body{
 /* header and logo  */
 .header-logo{
     width: 100%;
-    height: 8vh;
+    height: 10%;
     background-color: gold;
     margin:  0 ;
     display: flex;
@@ -44,7 +44,7 @@ body{
     font-size: 3rem;
     line-height: 2rem;
     margin-top:10px ;
-     margin-left: 3rem; 
+    margin-left: 3rem; 
 }
 .logo-color{
     color: red;
@@ -61,7 +61,7 @@ body{
 }
 .navbar ul li {
     list-style-type: none;
-    text-transform: uppercase;
+ 
 }
 .navbar ul li a{
     text-decoration: none;
@@ -158,12 +158,30 @@ body{
 
  /* main section end  here  */
 
-
+@media (max-width:992px){
+   .logo{
+      font-size: 2rem;
+      line-height: 1.5rem;
+      margin-top:10px ;
+      margin-left: 1.5rem;
+      
+     }
+}
  /* media query section  */
  @media (max-width:868px){
     img.card-img-top {
         height: 300px;
     }
-   
+   .logo{
+    font-size: 2rem;
+    line-height: 1.5rem;
+    margin-top:10px ;
+    margin-left: 1.5rem; 
+   }
+   .navbar ul {
+      position: relative;
+      line-height: 1.5rem;
+      margin: 5px 2rem 0 0;
+  }
      
  }
