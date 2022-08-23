@@ -1,0 +1,169 @@
+/* google fonts robot link  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800&family=Roboto:wght@100;300;500;700&display=swap');
+
+/* google fonts burkis */
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&family=Poppins:wght@100;200;300;400;500;600;700;800&display=swap');
+
+
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+body{
+     font-family: 'Roboto', sans-serif; 
+     
+}
+/* hader banner section start here  */
+ .container-fluid{
+    width: 100%;
+    height: 90vh;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-image: linear-gradient(rgb(26, 24, 24,0.30),rgba(24, 23, 23, 0.15)), url(/Banner/slide1\ \(1\).jpg);
+    padding: 0;
+} 
+
+/* header and logo  */
+.header-logo{
+    width: 100%;
+    height: 8vh;
+    background-color: gold;
+    margin:  0 ;
+    display: flex;
+    justify-content: space-between;
+    padding: 0 ;
+
+} 
+
+.logo{
+    font-family: 'Berkshire Swash', cursive;
+    color: rgb(8, 7, 7);
+    font-weight: 500;
+    font-size: 3rem;
+    line-height: 2rem;
+    margin-top:10px ;
+     margin-left: 3rem; 
+}
+.logo-color{
+    color: red;
+}
+
+/* nav item in navbar  */
+.navbar ul {
+    display: flex;
+    gap:  10px;
+    justify-content: flex-end;
+    position: relative;
+    line-height: 2rem;
+    margin: 5px 3rem 0 0;
+}
+.navbar ul li {
+    list-style-type: none;
+    text-transform: uppercase;
+}
+.navbar ul li a{
+    text-decoration: none;
+    color: rgb(30, 1, 1);
+    font-size: 20px;
+}
+
+/* caption of header banner  */
+.header-caption{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 70vh;
+   
+}
+.heading-title{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.header-text{
+  
+    font-family: 'Berkshire Swash', cursive;
+    color: white;
+    font-size: 5vw;
+    color: gold;
+    text-align: center;
+    font-weight: 700;
+
+ }
+
+ /* header section end here  */
+
+
+ /* main section start from here  */
+ #main{
+    margin-top: 5rem;
+ }
+ .player-container{
+    background-color: rgb(227, 224, 220);
+    height: auto;
+    width: 90%;
+    margin: 0 auto;
+ }
+ .card-img-top{
+    width: 100%;
+    height: 205px;
+ }
+ #player-list-ul li{
+    list-style-type: none;
+ }
+ .input-size{
+    width: 8rem;
+ }
+ .btn-size{
+    width: 100%;
+    height: 6vh;
+    background-color: blue;
+    border-radius: 5px;
+    border: 1px solid silver;
+    color: white;
+    margin-bottom: 2rem;
+   
+
+ }
+ .btn-size:hover{
+    background-color: rgb(12, 155, 211);
+ }
+ .font-gray{
+    color: rgb(215, 218, 219);
+    font-weight: 300;
+ }
+ .font-color-light{
+    color: rgb(211, 215, 215);
+ }
+ .container-xlg{
+    width: 100%;
+    height: 35vh;
+ }
+ .border-color{
+    border-top: 2px solid white;
+    width: 100%;
+ }
+ #player-list-ul li{
+   list-style-type: decimal;
+   color: white;
+   font-size: 24px;
+   line-height: 40px;
+  
+ }
+
+ /* main section end  here  */
+
+
+ /* media query section  */
+ @media (max-width:868px){
+    img.card-img-top {
+        height: 300px;
+    }
+   
+     
+ }
